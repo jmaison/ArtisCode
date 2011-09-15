@@ -17245,3 +17245,456 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/rails.png" for 127.0.0.1 at 2011-09-10 09:51:39 +0200
 Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-13 16:56:09 +0200
+  Processing by TagsController#index as HTML
+Completed 404 Not Found in 26ms
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/tags_controller.rb:6:in `index'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-13 16:56:22 +0200
+  Processing by TagsController#index as HTML
+Completed 404 Not Found in 8ms
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/tags_controller.rb:6:in `index'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.0ms)
+
+
+Started GET "/l" for 127.0.0.1 at 2011-09-13 16:56:25 +0200
+
+ActionController::RoutingError (No route matches [GET] "/l"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/lo" for 127.0.0.1 at 2011-09-13 16:56:25 +0200
+
+ActionController::RoutingError (No route matches [GET] "/lo"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/log" for 127.0.0.1 at 2011-09-13 16:56:27 +0200
+
+ActionController::RoutingError (No route matches [GET] "/log"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2011-09-13 16:56:27 +0200
+
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/l" for 127.0.0.1 at 2011-09-13 16:56:28 +0200
+
+ActionController::RoutingError (No route matches [GET] "/l"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/login" for 127.0.0.1 at 2011-09-13 16:56:29 +0200
+  Processing by HomeController#login as HTML
+Rendered home/login.html.erb within layouts/application (1.0ms)
+Compiled home.css  (2ms)  (pid 832)
+Compiled redirection.css  (2ms)  (pid 832)
+Compiled scaffolds.css  (32ms)  (pid 832)
+Compiled tags.css  (1ms)  (pid 832)
+Compiled users.css  (3ms)  (pid 832)
+Compiled application.css  (2ms)  (pid 832)
+Compiled home.js  (173ms)  (pid 832)
+Compiled redirection.js  (94ms)  (pid 832)
+Compiled tags.js  (86ms)  (pid 832)
+Compiled users.js  (106ms)  (pid 832)
+Compiled application.js  (25ms)  (pid 832)
+Compiled jquery.js  (13ms)  (pid 832)
+Compiled jquery_ujs.js  (16ms)  (pid 832)
+Completed 200 OK in 633ms (Views: 632.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2011-09-13 16:56:30 +0200
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/login" for 127.0.0.1 at 2011-09-13 16:56:30 +0200
+  Processing by HomeController#login as HTML
+Rendered home/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-13 16:56:30 +0200
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-09-13 16:56:30 +0200
+Served asset /home.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/redirection.css?body=1" for 127.0.0.1 at 2011-09-13 16:56:30 +0200
+Served asset /redirection.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-13 16:56:30 +0200
+Served asset /scaffolds.css - 200 OK (4ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2011-09-13 16:56:30 +0200
+Served asset /tags.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-13 16:56:30 +0200
+Served asset /users.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-13 16:56:30 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-13 16:56:30 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-09-13 16:56:30 +0200
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2011-09-13 16:56:30 +0200
+Served asset /tags.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-13 16:56:30 +0200
+Served asset /users.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/redirection.js?body=1" for 127.0.0.1 at 2011-09-13 16:56:30 +0200
+Served asset /redirection.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-13 16:56:30 +0200
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2011-09-13 16:56:30 +0200
+Served asset /rails.png - 304 Not Modified (2ms)
+
+
+Started POST "/home/login" for 127.0.0.1 at 2011-09-13 16:56:43 +0200
+  Processing by HomeController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s+8iyTFEpl5Cf+0VmzZsUyjECYC3TEYlYIX+g8vRfGY=", "email"=>"jerome_maisonnasse@hotmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'jerome_maisonnasse@hotmail.com' LIMIT 1[0m
+Redirected to http://localhost:3000/tags
+Completed 302 Found in 16ms
+
+
+Started GET "/tags" for 127.0.0.1 at 2011-09-13 16:56:43 +0200
+  Processing by TagsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.0ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."user_id" = 1[0m
+Rendered tags/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 154ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-13 16:56:43 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-09-13 16:56:43 +0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/redirection.css?body=1" for 127.0.0.1 at 2011-09-13 16:56:43 +0200
+Served asset /redirection.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-13 16:56:43 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2011-09-13 16:56:43 +0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-13 16:56:43 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-13 16:56:43 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-13 16:56:43 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-09-13 16:56:43 +0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/redirection.js?body=1" for 127.0.0.1 at 2011-09-13 16:56:43 +0200
+Served asset /redirection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2011-09-13 16:56:43 +0200
+Served asset /tags.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-13 16:56:43 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-13 16:56:43 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2011-09-13 16:56:43 +0200
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/home/login" for 127.0.0.1 at 2011-09-15 10:48:47 +0200
+  Processing by HomeController#login as HTML
+Rendered home/login.html.erb within layouts/application (100.0ms)
+Completed 500 Internal Server Error in 267ms
+
+ActionView::Template::Error (In order to use #url_for, you must include routing helpers explicitly. For instance, `include Rails.application.routes.url_helpers):
+    1: <div>
+    2: 	<%= form_tag do %>
+    3: 		<fieldset>
+    4: 			<legend>Please Log In</legend>
+    5: 		
+  app/views/home/login.html.erb:2:in `_app_views_home_login_html_erb__55781958_49704432'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.0ms)
+
+
+Started GET "/home/login" for 127.0.0.1 at 2011-09-15 10:48:52 +0200
+  Processing by HomeController#login as HTML
+Rendered home/login.html.erb within layouts/application (425.0ms)
+Completed 200 OK in 676ms (Views: 676.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-15 10:49:19 +0200
+  Processing by TagsController#index as HTML
+Completed 404 Not Found in 38ms
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/tags_controller.rb:6:in `index'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-15 10:49:19 +0200
+  Processing by TagsController#index as HTML
+Completed 404 Not Found in 10ms
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/tags_controller.rb:6:in `index'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/home/login" for 127.0.0.1 at 2011-09-15 10:49:24 +0200
+  Processing by HomeController#login as HTML
+Rendered home/login.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:25 +0200
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:25 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/redirection.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:25 +0200
+Served asset /redirection.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:25 +0200
+Served asset /tags.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:25 +0200
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:25 +0200
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/holm" for 127.0.0.1 at 2011-09-15 10:49:25 +0200
+
+ActionController::RoutingError (No route matches [GET] "/holm"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/ho" for 127.0.0.1 at 2011-09-15 10:49:26 +0200
+
+ActionController::RoutingError (No route matches [GET] "/ho"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2011-09-15 10:49:27 +0200
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:27 +0200
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:27 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:27 +0200
+Served asset /scaffolds.css - 200 OK (19ms)
+
+
+Started GET "/assets/redirection.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:27 +0200
+Served asset /redirection.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:27 +0200
+Served asset /tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-15 10:49:27 +0200
+Served asset /jquery.js - 200 OK (78ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-15 10:49:27 +0200
+Served asset /jquery_ujs.js - 200 OK (29ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-09-15 10:49:27 +0200
+Served asset /home.js - 200 OK (3ms)
+
+
+Started GET "/assets/redirection.js?body=1" for 127.0.0.1 at 2011-09-15 10:49:27 +0200
+Served asset /redirection.js - 200 OK (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:27 +0200
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2011-09-15 10:49:27 +0200
+Served asset /tags.js - 200 OK (5ms)
+
+
+Started GET "/home/login" for 127.0.0.1 at 2011-09-15 10:49:28 +0200
+  Processing by HomeController#login as HTML
+Rendered home/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/redirection.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:28 +0200
+Served asset /redirection.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:28 +0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:28 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:28 +0200
+Served asset /tags.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-15 10:49:28 +0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:28 +0200
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-09-15 10:49:28 +0200
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-15 10:49:28 +0200
+Served asset /users.js - 200 OK (4ms)
+
+
+Started GET "/assets/redirection.js?body=1" for 127.0.0.1 at 2011-09-15 10:49:28 +0200
+Served asset /redirection.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2011-09-15 10:49:28 +0200
+Served asset /rails.png - 200 OK (44ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-15 10:49:28 +0200
+Served asset /application.js - 200 OK (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-15 10:49:28 +0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2011-09-15 10:49:28 +0200
+Served asset /tags.js - 200 OK (0ms)
+
+
+Started POST "/home/login" for 127.0.0.1 at 2011-09-15 10:49:41 +0200
+  Processing by HomeController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lPZtFjq/UGwHJq5ULxwRXMT8W8nOPFSOqLURuy3vTJU=", "email"=>"al.poncerry@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'al.poncerry@gmail.com' LIMIT 1[0m
+Redirected to http://localhost:3000/tags
+Completed 302 Found in 18ms
+
+
+Started GET "/tags" for 127.0.0.1 at 2011-09-15 10:49:41 +0200
+  Processing by TagsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (1.0ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."user_id" = 2[0m
+Rendered tags/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 328ms (Views: 25.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:42 +0200
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/redirection.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:42 +0200
+Served asset /redirection.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-15 10:49:42 +0200
+Served asset /application.css - 304 Not Modified (1ms)
