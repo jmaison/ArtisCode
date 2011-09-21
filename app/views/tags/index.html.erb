@@ -1,26 +1,59 @@
-<h1>Listing tags</h1>
+<div id='main'>
+<fieldset>
+	<legend>Edit the url linked to your code</legend>
+	
+	<% @tags.each do |tag| %>
+    <div>
+	    <div id='qrcode'>
+			<table>
+			 <!-- <% url = "http://localhost:3000/redirection/index?qrcode_id="+tag.data %> -->
+			 <% url = "tng/"+tag.data %>
+			 <% @qr = RQRCode::QRCode.new(url, :size => 2, :level => :l) %>
+			 <% @qr.modules.each_index do |x| -%>
+			   <tr>
+			   <% @qr.modules.each_index do |y| -%>
+				<% if @qr.dark?(x,y) -%>
+				<td class="black"/>
+				<% else -%>
+				<td class="white"/>
+				<% end -%>
+			   <% end -%>
+			   </tr>
+			 <% end -%>
+			</table>	
+		</div>
+		<div id='fleche'>
+		   <%= image_tag("link.png", :height => '50', :width => '62')%>
+		</div>
+		<div id='link'>
+		<%= form_for(tag) do |f| %>
+  <% if tag.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tag.errors.count, "error") %> prohibited this tag from being saved:</h2>
 
-<table>
-  <tr>
-    <th>Data</th>
-    <th>Url</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+      <ul>
+      <% tag.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
 
-<% @tags.each do |tag| %>
-  <tr>
-    <td><%= tag.data %></td>
-    <td><%= tag.url %></td>
-    <td><%= link_to 'Show', tag %></td>
-    <td><%= link_to 'Edit', edit_tag_path(tag) %></td>
-    <td><%= link_to 'Destroy', tag, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+  <div class="field">
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </div>
+ 
+  <div class="actions">
+    <%= f.submit %>
+  </div>
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Tag', new_tag_path %>
-<%= link_to 'Logout', :controller => :home, :action => :logout %>
+		<!--
+			<%= tag.url %>
+			<%= link_to 'Edit', edit_tag_path(tag) %> -->
+		</div>
+	   
+	</div>
+	<% end %>
+</fieldset>
+</div>

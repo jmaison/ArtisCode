@@ -3,9 +3,9 @@ class TagsController < ApplicationController
   # GET /tags
   # GET /tags.json
   def index
-    user = User.find(session[:user_id])
+    @user = User.find(session[:user_id])
 	
-    @tags = user.tags.all
+    @tags = @user.tags.all
 
     respond_to do |format|
       format.html # index.html.erb

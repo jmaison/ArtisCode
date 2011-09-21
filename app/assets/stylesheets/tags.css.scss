@@ -1,3 +1,51 @@
 // Place all the styles related to the Tags controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ table {
+  border-width: 0;
+  border-style: none;
+  border-color: #0000ff;
+  border-collapse: collapse;
+ }
+ td {
+   border-width: 0;
+   border-style: none;
+   border-color: #0000ff;
+   border-collapse: collapse;
+   padding: 0;
+   margin: 0;
+   width: 5px;
+   height: 5px;
+ }
+ td.black { background-color: #000; }
+ td.white { background-color: #fff; }
+ 
+ div#main {
+
+
+ }
+ 
+ div#qrcode {
+    width:160px;
+	height:160px;
+
+	float: left;
+ }
+ 
+ div#fleche {
+    width:50px;
+	height:30px;
+
+	float: left;
+	margin-top : 80px;
+	margin-left : 25px;
+ }
+ 
+ div#link {
+    width:200px;
+	height:25px;
+	
+	float: left;
+	margin-top : 70px;
+	margin-left : 30px;
+ }

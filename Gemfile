@@ -4,6 +4,7 @@ gem 'rails', '3.1.0'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
+gem "rqrcode-rails3", "~> 0.1.3"
 
 group :production do
   gem 'pg'

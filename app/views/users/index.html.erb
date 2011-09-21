@@ -8,8 +8,47 @@
 
 <% @users.each do |user| %>
   <tr>
+    <td>
+	<style type="text/css">
+ table {
+  border-width: 0;
+  border-style: none;
+  border-color: #0000ff;
+  border-collapse: collapse;
+  width : 50px;
+  height : 50px;
+ }
+ td {
+   border-width: 0;
+   border-style: none;
+   border-color: #0000ff;
+   border-collapse: collapse;
+   padding: 0;
+   margin: 0;
+   width: 1px;
+   height: 1px;
+ }
+ td.black { background-color: #000; }
+ td.white { background-color: #fff; }
+</style>
+ 
+<table>
+ <% @qr = RQRCode::QRCode.new(user.tags[0].url) %>
+ <% @qr.modules.each_index do |x| -%>
+   <tr>
+   <% @qr.modules.each_index do |y| -%>
+    <% if @qr.dark?(x,y) -%>
+    <td class="black"/>
+    <% else -%>
+    <td class="white"/>
+    <% end -%>
+   <% end -%>
+   </tr>
+ <% end -%>
+</table>
+	</td>
     <td><%= user.email %></td>
-
+    
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>

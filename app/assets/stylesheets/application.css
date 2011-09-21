@@ -5,3 +5,18 @@
  *= require_self
  *= require_tree . 
 */
+div#session {
+	width:	100px;
+	height: 25px;
+	
+	margin-top: 25px;
+
+}
+
+#header 
+{
+  font-size: 45px;
+   text-align: center; /* Pour centrer le titre */
+   font-family: "Arial Black", Arial, Verdana, serif; /* Un titre en Arial Black c'est mieux :o;) */
+
+}
