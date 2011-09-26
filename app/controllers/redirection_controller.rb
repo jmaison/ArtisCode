@@ -1,7 +1,7 @@
 class RedirectionController < ApplicationController
   def index
      #Recupère lien courant correspondant au QRcode
-	qrcode_id = params[:qrcode_id]
+	qrcode_id = params[:id]
 	puts "YYYYYYYYYYYY"+qrcode_id
 	if !qrcode_id.nil?
 	  t = Tag.find(:all,:conditions => ["data = ?",qrcode_id])
