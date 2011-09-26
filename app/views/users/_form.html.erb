@@ -11,9 +11,15 @@
     </div>
   <% end %>
 
-  <divclass="field" >
+  
+  <div class="field" >
 		<%= f.label :data %><br />
 		<%= text_field_tag :data, params[:data]%>
+  </div>
+  
+  <div class="field" >
+		<%= f.label :url %><br />
+		<%= text_field_tag :url, params[:url]%>
   </div>
   
   <div class="field">

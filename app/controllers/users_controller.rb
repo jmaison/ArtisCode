@@ -45,22 +45,17 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
 	
-	@tag = Tag.new
-	@tag.data = params[:data]
-	@tag.url = "http://bydefault.fr"
-	puts "____________params[:data]"+params[:data]
-	@tag.save
-	
-	#if @tag.save
-	#	@user.tags[@user.tags.size - 1] = @tag
-	#else
-	#end
- 
     respond_to do |format|
       if @user.save
-		flash[:notice] = "User #{@user.email} was successfully created."
-        format.html { redirect_to :action=>'index' }
-        format.json { render json: @user, status: :created, location: @user }  
+	    url = "http://tagnart.com/rdc/"+params[:url]
+	    @tag = @user.tags.new(:url => url, :data => params[:data])
+		if @tag.save 
+			flash[:notice] = "User #{@user.email} was successfully created."
+			format.html { redirect_to :action=>'index' }
+			format.json { render json: @user, status: :created, location: @user }  
+		else
+			puts  "User #{@user.email} was not successfully created."
+		end
 	  else
         format.html { render action: "new" }
         format.json { render json: @user.errors, status: :unprocessable_entity }

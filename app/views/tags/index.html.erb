@@ -6,8 +6,7 @@
     <div>
 	    <div id='qrcode'>
 			<table>
-			 <!-- <% url = "http://localhost:3000/redirection/index?qrcode_id="+tag.data %> -->
-			 <% url = "tng/"+tag.data %>
+			 <% url = tag.data %>
 			 <% @qr = RQRCode::QRCode.new(url, :size => 2, :level => :l) %>
 			 <% @qr.modules.each_index do |x| -%>
 			   <tr>
@@ -48,9 +47,6 @@
     <%= f.submit %>
   </div>
 <% end %>
-		<!--
-			<%= tag.url %>
-			<%= link_to 'Edit', edit_tag_path(tag) %> -->
 		</div>
 	   
 	</div>
